@@ -2,7 +2,14 @@ import React from "react";
 import howManyParks from "./parks/howManyParks";
 
 function ColoradoStateParks() {
-  howManyParks(); // => "42 parks!"
+  const parksInfo = howManyParks(); 
 
-  return <h1>Colorado State Parks!</h1>;
+  return (
+    <div>
+      <h1>Colorado State Parks!</h1>
+      <p>{parksInfo}</p>
+    </div>
+  );
 }
+
+export default ColoradoStateParks;
